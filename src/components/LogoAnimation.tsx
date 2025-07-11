@@ -97,7 +97,7 @@ const LogoAnimation = ({ onComplete }: LogoAnimationProps) => {
         ))}
       </div>
 
-      {/* Logo Phase - White Logo */}
+      {/* Logo Phase - Updated Logo */}
       <div 
         className={`absolute transition-all duration-1200 ease-out ${
           animationPhase === 'logo' || animationPhase === 'exit'
@@ -110,7 +110,7 @@ const LogoAnimation = ({ onComplete }: LogoAnimationProps) => {
         }}
       >
         <img 
-          src="/lovable-uploads/8d1025cf-fb9f-4373-8143-ad88d8362604.png" 
+          src="/lovable-uploads/5978ed5c-e855-45cd-bef2-5c802797ef89.png" 
           alt="SJA Logo" 
           className="h-32 md:h-48 lg:h-56 w-auto"
         />

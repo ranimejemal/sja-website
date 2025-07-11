@@ -35,7 +35,7 @@ const Navigation = ({ onLogoClick }: NavigationProps) => {
       
       <div className="max-w-7xl mx-auto px-6 py-4 relative">
         <div className="flex justify-between items-center">
-          {/* Logo - Image */}
+          {/* Logo - Updated Image */}
           <div className="flex items-center">
             <Link 
               to="/" 
@@ -43,7 +43,7 @@ const Navigation = ({ onLogoClick }: NavigationProps) => {
               onClick={handleLogoClick}
             >
               <img 
-                src="/lovable-uploads/234d8d9f-aebb-4a76-83ef-1d9f69a19364.png" 
+                src="/lovable-uploads/5978ed5c-e855-45cd-bef2-5c802797ef89.png" 
                 alt="SJA Logo" 
                 className="h-8 w-auto drop-shadow-sm"
               />
