@@ -1,3 +1,4 @@
+
 import React, { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { Menu, X } from 'lucide-react';
@@ -60,7 +61,6 @@ const Navigation = ({ onLogoClick }: NavigationProps) => {
                   fontSize: '17px',
                   fontWeight: '300',
                   letterSpacing: '0.8px',
-                  textTransform: 'uppercase',
                 }}
               >
                 {item.name}
@@ -100,7 +100,6 @@ const Navigation = ({ onLogoClick }: NavigationProps) => {
                     fontSize: '16px',
                     fontWeight: '300',
                     letterSpacing: '0.8px',
-                    textTransform: 'uppercase',
                   }}
                   onClick={() => setIsMenuOpen(false)}
                 >
