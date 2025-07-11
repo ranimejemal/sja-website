@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { Menu, X } from 'lucide-react';
@@ -12,9 +11,8 @@ const Navigation = ({ onLogoClick }: NavigationProps) => {
   const location = useLocation();
 
   const navItems = [
-    { name: 'Syrine jemal', path: '/syrine-jemal' },
+    { name: 'Syrine Jemal', path: '/syrine-jemal' },
     { name: 'Projects', path: '/projects' },
-    { name: 'Sja labs', path: '/sj-labs' },
     { name: 'Publications', path: '/publications' },
     { name: 'Contact', path: '/contact' },
   ];
@@ -50,8 +48,8 @@ const Navigation = ({ onLogoClick }: NavigationProps) => {
             </Link>
           </div>
           
-          {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center space-x-8">
+          {/* Desktop Navigation - Added margin-right to shift items to the right */}
+          <div className="hidden md:flex items-center space-x-8 mr-8">
             {navItems.map((item) => (
               <Link
                 key={item.name}
