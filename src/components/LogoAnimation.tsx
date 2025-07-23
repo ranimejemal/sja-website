@@ -27,10 +27,21 @@ const LogoAnimation = ({ onComplete }: LogoAnimationProps) => {
   }, [onComplete]);
 
   return (
-    <div className="fixed inset-0 bg-black flex items-center justify-center z-50 overflow-hidden">
+    <div 
+      className="fixed inset-0 flex items-center justify-center z-50 overflow-hidden"
+      style={{
+        backgroundImage: `url('/lovable-uploads/logo22.png')`,
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        backgroundRepeat: 'no-repeat'
+      }}
+    >
+      {/* Dark overlay for better text visibility */}
+      <div className="absolute inset-0 bg-black/50"></div>
+      
       {/* Initial and Expanding Text Phase */}
       <div 
-        className={`absolute transition-all duration-1000 ease-out ${
+        className={`absolute transition-all duration-1000 ease-out z-10 ${
           animationPhase === 'initial' || animationPhase === 'expanding'
             ? 'opacity-100 scale-100' 
             : animationPhase === 'logo'
@@ -57,7 +68,7 @@ const LogoAnimation = ({ onComplete }: LogoAnimationProps) => {
 
       {/* Logo Phase - New Logo */}
       <div 
-        className={`absolute transition-all duration-1200 ease-out ${
+        className={`absolute transition-all duration-1200 ease-out z-10 ${
           animationPhase === 'logo' || animationPhase === 'exit'
             ? 'opacity-100 scale-100' 
             : 'opacity-0 scale-50'
@@ -68,7 +79,7 @@ const LogoAnimation = ({ onComplete }: LogoAnimationProps) => {
         }}
       >
         <img 
-          src="/lovable-uploads/a25e2eb3-e7cc-448a-8262-02659d984c2e.png" 
+          src="/lovable-uploads/logo22.png" 
           alt="SJA Logo" 
           className="h-32 md:h-48 lg:h-56 w-auto"
         />
