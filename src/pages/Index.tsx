@@ -37,7 +37,6 @@ const Index = () => {
             src="/public/Soft_breeze_rustles_palm_leaves_.mp4"
             autoPlay
             muted
-            loop
             playsInline
           />
         </div>
