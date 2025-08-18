@@ -32,7 +32,7 @@ const App = () => {
           )}
 
           {/* Render app once animation completes */}
-          {(animationDone || true) && ( // 'true' ensures fallback render if animation fails
+          {(animationDone) && ( // 'true' ensures fallback render if animation fails
             <BrowserRouter>
               <Routes>
                 <Route path="/" element={<Index />} />
