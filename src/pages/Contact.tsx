@@ -18,10 +18,10 @@ const Contact = () => {
 
     emailjs
       .sendForm(
-        'service_3nvr0s8',    // replace with your EmailJS service ID
-        'template_chhnp8m',   // replace with your EmailJS template ID
+        'service_3nvr0s8',    
+        'template_chhnp8m',   
         formRef.current,
-        'Gjc83cBO5IVx9gnwS'     // replace with your EmailJS public key
+        'Gjc83cBO5IVx9gnwS'    
       )
       .then(() => {
         formRef.current?.reset();

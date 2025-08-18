@@ -3,7 +3,7 @@ import React from 'react';
 import Navigation from '@/components/Navigation';
 
 const Projects = () => {
-  // Placeholder project data - you can replace these with your own images and project names
+  
   const projects = [
     {
       id: 1,

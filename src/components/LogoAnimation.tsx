@@ -1,75 +1,57 @@
-import { useEffect, useRef, useState } from "react";
+import { useRef, useState, useEffect } from "react";
 
 interface LogoAnimationProps {
   onComplete: () => void;
 }
 
+let hasAnimationPlayed = false; // persistent flag to prevent replay
+
 const LogoAnimation = ({ onComplete }: LogoAnimationProps) => {
   const videoRef = useRef<HTMLVideoElement>(null);
-  const [startFade, setStartFade] = useState(false);
-  const [finished, setFinished] = useState(false);
-  const hasPlayedRef = useRef(false); 
+  const [fadeOut, setFadeOut] = useState(false);
+  const [isVisible, setIsVisible] = useState(true);
 
   useEffect(() => {
-    if (hasPlayedRef.current) return; 
-    hasPlayedRef.current = true;
+    if (hasAnimationPlayed) {
+      onComplete(); // already played → immediately call complete
+      return;
+    }
 
     const video = videoRef.current;
     if (!video) return;
 
     video.loop = false;
-    video.currentTime = 0;
-    video.play();
-
-    const handleTimeUpdate = () => {
-      if (video.duration - video.currentTime <= 1 && !startFade) {
-        setStartFade(true);
-      }
-    };
+    hasAnimationPlayed = true; // mark as played
 
     const handleEnded = () => {
-      setFinished(true);
+      setFadeOut(true);
       setTimeout(() => {
+        setIsVisible(false);
         onComplete();
-      }, 200);
+      }, 1000); // fade duration
     };
 
-    video.addEventListener("timeupdate", handleTimeUpdate);
     video.addEventListener("ended", handleEnded);
 
-    return () => {
-      video.removeEventListener("timeupdate", handleTimeUpdate);
-      video.removeEventListener("ended", handleEnded);
-    };
+    return () => video.removeEventListener("ended", handleEnded);
   }, [onComplete]);
 
-  if (finished) return null;
+  if (!isVisible) return null;
 
   return (
-    <div className="fixed inset-0 z-[9999] flex items-center justify-center overflow-hidden bg-black">
+    <div
+      className={`fixed inset-0 z-50 flex items-center justify-center bg-black transition-opacity duration-1000 ${
+        fadeOut ? "opacity-0 pointer-events-none" : "opacity-100"
+      }`}
+    >
       <video
         ref={videoRef}
         src="/0730(1).mp4"
-        className={`w-full h-full object-cover transition-opacity duration-1000 ${
-          startFade ? "opacity-0" : "opacity-100"
-        }`}
+        autoPlay
         muted
         playsInline
+        className="w-full h-full object-cover"
       />
-
-      {startFade && (
-        <div className="absolute inset-0 animate-fadeToBlack pointer-events-none" />
-      )}
-
-      <style>{`
-        @keyframes fadeToBlack {
-          0% { background-color: rgba(0, 0, 0, 0); }
-          100% { background-color: rgba(0, 0, 0, 0.9); }
-        }
-        .animate-fadeToBlack {
-          animation: fadeToBlack 1s ease-in-out forwards;
-        }
-      `}</style>
     </div>
   );
 };

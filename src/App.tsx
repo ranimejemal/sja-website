@@ -31,21 +31,19 @@ const App = () => {
           )}
 
           {animationDone && (
-            <div className="min-h-screen bg-black text-white">
-              <BrowserRouter>
-                <Routes>
-                  <Route path="/" element={<Index />} />
-                  <Route path="/syrine-jemal" element={<SyrineJemal />} />
-                  <Route path="/projects" element={<Projects />} />
-                  <Route path="/sj-labs" element={<SJLabs />} />
-                  <Route path="/people" element={<People />} />
-                  <Route path="/publications" element={<Publications />} />
-                  <Route path="/contact" element={<Contact />} />
-                  <Route path="*" element={<NotFound />} />
-                  <Route path="/thank-you" element={<ThankYou />} />
-                </Routes>
-              </BrowserRouter>
-            </div>
+            <BrowserRouter>
+              <Routes>
+                <Route path="/" element={<Index />} />
+                <Route path="/syrine-jemal" element={<SyrineJemal />} />
+                <Route path="/projects" element={<Projects />} />
+                <Route path="/sj-labs" element={<SJLabs />} />
+                <Route path="/people" element={<People />} />
+                <Route path="/publications" element={<Publications />} />
+                <Route path="/contact" element={<Contact />} />
+                <Route path="/thank-you" element={<ThankYou />} />
+                <Route path="*" element={<NotFound />} />
+              </Routes>
+            </BrowserRouter>
           )}
         </div>
       </TooltipProvider>
