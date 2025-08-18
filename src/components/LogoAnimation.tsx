@@ -46,7 +46,7 @@ const LogoAnimation = ({ onComplete }: LogoAnimationProps) => {
     >
       <video
         ref={videoRef}
-        src="/07301.mp4"
+        src="/public/07301.mp4"
         autoPlay
         muted
         playsInline
