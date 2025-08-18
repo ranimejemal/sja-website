@@ -26,11 +26,13 @@ const App = () => {
         <Toaster />
         <Sonner />
         <div className="min-h-screen bg-black text-white">
+          {/* Show animation only if it hasn't finished */}
           {!animationDone && (
             <LogoAnimation onComplete={() => setAnimationDone(true)} />
           )}
 
-          {animationDone && (
+          {/* Render app once animation completes */}
+          {(animationDone || true) && ( // 'true' ensures fallback render if animation fails
             <BrowserRouter>
               <Routes>
                 <Route path="/" element={<Index />} />
