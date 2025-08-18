@@ -18,9 +18,9 @@ const Navigation = ({ onLogoClick }: NavigationProps) => {
       const currentY = window.scrollY;
 
       if (currentY > lastScrollY && currentY > 100) {
-        setShowNavbar(false); // Scroll down → hide navbar
+        setShowNavbar(false); 
       } else {
-        setShowNavbar(true); // Scroll up → show navbar
+        setShowNavbar(true); 
       }
 
       setLastScrollY(currentY);
@@ -66,7 +66,7 @@ const Navigation = ({ onLogoClick }: NavigationProps) => {
               onClick={handleLogoClick}
             >
               <img
-                src="/public/logo24.png"
+                src="/logo24.png"
                 alt="SJA Logo"
                 className="h-12 w-auto drop-shadow-sm"
               />
