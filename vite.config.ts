@@ -12,7 +12,7 @@ export default defineConfig({
     react()
     
   ],
-  base:"/sja-website",
+  base:"/",
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "./src"),

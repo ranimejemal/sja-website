@@ -1,5 +1,5 @@
 import { ArrowRight } from 'lucide-react';
-import { useState, useEffect } from 'react';
+import { useState, useEffect,useRef } from 'react';
 import { Button } from '@/components/ui/button';
 import { Link } from 'react-router-dom';
 import LogoAnimation from '@/components/LogoAnimation';
@@ -7,12 +7,13 @@ import Navigation from '@/components/Navigation';
 
 const Index = () => {
   const [showAnimation, setShowAnimation] = useState(true);
+  const videoRef = useRef<HTMLVideoElement>(null);
 
   useEffect(() => {
     // Hide animation after it completes (6 seconds)
     const timer = setTimeout(() => {
       setShowAnimation(false);
-    }, 6000);
+    }, 5000);
 
     return () => clearTimeout(timer);
   }, []);
@@ -20,6 +21,26 @@ const Index = () => {
   const handleLogoClick = () => {
     setShowAnimation(true);
   };
+  
+
+
+  useEffect(() => {
+    const video = videoRef.current;
+    if (!video) return;
+
+    const handleEnded = () => {
+      setShowAnimation(false);
+    };
+
+    video.addEventListener("ended", handleEnded);
+
+    // Start the video
+    video.play();
+
+    return () => {
+      video.removeEventListener("ended", handleEnded);
+    };
+  }, []);
 
   if (showAnimation) {
     return <LogoAnimation onComplete={() => setShowAnimation(false)} />;
