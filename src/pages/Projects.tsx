@@ -8,32 +8,32 @@ const Projects = () => {
     {
       id: 1,
       title: "VILLA M",
-      image: "/assets/Copie de Copie de ARCHITECTURE (Présentation) (1).png"
+      image: "/Copie de Copie de ARCHITECTURE (Présentation) (1).png"
     },
     {
       id: 2,
       title: "TOWER I",
-      image: "/assets/tower.png"
+      image: "/tower.png"
     },
     {
       id: 3,
       title: "VILLA K",
-      image: "/assets/Copie de Copie de ARCHITECTURE (Présentation) (7).png"
+      image: "/Copie de Copie de ARCHITECTURE (Présentation) (7).png"
     },
     {
       id: 4,
       title: "VILLA x",
-      image: "/assets/Copie de Copie de ARCHITECTURE (Présentation) (12).png"
+      image: "/Copie de Copie de ARCHITECTURE (Présentation) (12).png"
     },
     {
       id: 5,
       title: "STUDIO S",
-      image: "/assets/Copie de Copie de ARCHITECTURE (Présentation) (2).png"
+      image: "/Copie de Copie de ARCHITECTURE (Présentation) (2).png"
     },
     {
       id: 6,
       title: "HOUSE F",
-      image: "/assets/Copie de Copie de ARCHITECTURE (Présentation) (4).png"
+      image: "/Copie de Copie de ARCHITECTURE (Présentation) (4).png"
     }
   ];
 

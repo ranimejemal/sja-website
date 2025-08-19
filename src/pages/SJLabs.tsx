@@ -41,7 +41,7 @@ const SJLabs: React.FC = () => {
           {/* Right Section with Image */}
           <div className="relative p-6 md:p-10 rounded-[2.5rem] shadow-lg overflow-hidden">
             <img
-              src="/assets/patot.png"
+              src="/patot.png"
               alt="AI Course Visual"
               className="rounded-[2.5rem] w-full h-auto object-cover"
             />
@@ -112,7 +112,7 @@ const SJLabs: React.FC = () => {
           <div className="flex flex-col items-center lg:items-start">
             <div className="rounded-[2.5rem] overflow-hidden w-full mb-6">
               <img
-                src="/assets/8d1025cf-fb9f-4373-8143-ad88d8362604.png"
+                src="/8d1025cf-fb9f-4373-8143-ad88d8362604.png"
                 alt="Instructor"
                 className="w-full h-auto object-cover rounded-[2.5rem]"
               />
@@ -258,22 +258,22 @@ Syrine is the founder of <strong>AI Architects Magazine</strong>, a global platf
 
             <div className="space-y-4">
               <img
-                src="/assets/tower2.png"
+                src="/tower2.png"
                 alt="AI Building Example"
                 className="rounded shadow-lg object-cover"
               />
               <img
-                src="/assets/001.png"
+                src="/001.png"
                 alt="Concept Example"
                 className="rounded shadow-lg object-cover"
               />
               <video
-    src="/assets/Professional_Mode_the_girl_is_walking_inside_the_r (1).mp4"
+    src="/Professional_Mode_the_girl_is_walking_inside_the_r (1).mp4"
     controls
     className="rounded shadow-lg w-full object-cover"
   />
   <video
-    src="/assets/Soft_breeze_rustles_palm_leaves_.mp4"
+    src="/Soft_breeze_rustles_palm_leaves_.mp4"
     controls
     className="rounded shadow-lg w-full object-cover"
   />

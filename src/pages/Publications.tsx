@@ -5,43 +5,43 @@ const publicationsData = [
   {
     id: 1,
     title: "3rd place Award",
-    image: "/assets/Sans titre (1350 x 1350 px).png",
+    image: "/Sans titre (1350 x 1350 px).png",
     path: "https://www.instagram.com/p/DG09ohBoR_m/?igsh=aHdsMHIzZmo1dWsz"
   },
   {
     id: 2,
     title: "Mentioned in ArtX Gallery",
-    image: "/assets/Design sans titre (71).png",
+    image: "/Design sans titre (71).png",
     path: "https://www.art-x.gallery/syrine-jemal"
   },
   {
     id: 3,
     title: "What if shops come to us : Design Therapy",
-    image: "/assets/WhatsApp Image 2025-08-05 at 3.58.30 PM (1).jpeg",
+    image: "/WhatsApp Image 2025-08-05 at 3.58.30 PM (1).jpeg",
     path: "https://www.linkedin.com/posts/designtherapy_aiarchitecture-midjourney-midjourneyarchitecture-activity-7268925639183773696-lLoS"
   },
   {
     id: 4,
     title: "Art Beacon Gallery",
-    image: "/assets/syrine jemal.jpeg",
+    image: "/syrine jemal.jpeg",
     path: "https://www.artbeacongallery.com/post/syrine-jemal"
   },
   {
     id: 5,
     title: "Honorable Mention : Futurly",
-    image: "/assets/Sans titre (1350 x 1350 px) (3).png",
+    image: "/Sans titre (1350 x 1350 px) (3).png",
     path: "https://www.instagram.com/p/DJe2BLooa3q/?img_index=5&igsh=MTVpbjd0Ynk2aWF6ZA%3D%3D"
   },
   {
     id: 6,
     title: "Featured in Culted",
-    image: "/assets/SnapInsta.to_468091058_1291042391831095_5771088012524780855_n.jpg",
+    image: "/SnapInsta.to_468091058_1291042391831095_5771088012524780855_n.jpg",
     path: "https://www.instagram.com/p/DCuGHOzAa4Q/?igsh=cHF1MWg1ZWNxbWlo"
   },
   {
     id: 7,
     title: "The Bridge of Equality",
-    image: "/assets/Capture d'écran 2025-08-05 164120.png",
+    image: "/Capture d'écran 2025-08-05 164120.png",
     path: "https://www.unrisd.org/en/syrine-jemal"
   }
 ];

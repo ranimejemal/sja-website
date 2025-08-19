@@ -33,7 +33,7 @@ const Index = () => {
         <div className="absolute inset-0 overflow-hidden">
           <video
             className="w-full h-full object-cover object-center"
-            src="/assets/Soft_breeze_rustles_palm_leaves_.mp4"
+            src="/Soft_breeze_rustles_palm_leaves_.mp4"
             autoPlay
             muted
             loop
