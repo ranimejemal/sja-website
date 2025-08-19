@@ -66,7 +66,7 @@ const Navigation = ({ onLogoClick }: NavigationProps) => {
               onClick={handleLogoClick}
             >
               <img
-                src="/logo24.png"
+                src="/assets/logo24.png"
                 alt="SJA Logo"
                 className=" relative z-50 h-12 w-auto "
               />

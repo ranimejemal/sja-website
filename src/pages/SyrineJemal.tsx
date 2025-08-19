@@ -13,7 +13,7 @@ const SyrineJemal = () => {
     <div className="flex justify-center lg:justify-start lg:mt-20">
       <div className="w-96 h-96 rounded-lg overflow-hidden bg-muted shadow-md">
         <img 
-          src="/8d1025cf-fb9f-4373-8143-ad88d8362604.png" 
+          src="/assets/8d1025cf-fb9f-4373-8143-ad88d8362604.png" 
           alt="Syrine Jemal"
           className="w-full h-full object-cover"
         />
