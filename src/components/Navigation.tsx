@@ -68,7 +68,7 @@ const Navigation = ({ onLogoClick }: NavigationProps) => {
               <img
                 src="/logo24.png"
                 alt="SJA Logo"
-                className="h-12 w-auto drop-shadow-sm"
+                className=" relative z-50 h-12 w-auto drop-shadow-sm"
               />
             </Link>
           </div>
